@@ -1,14 +1,16 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_Favorite_Place" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +18,367 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="2Xi-yo-Dbw"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zZb-a0-meZ">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6IR-qM-ejI">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="4Dl-fI-jPB">
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRAVEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="y5w-l0-ext">
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="hK6-CU-NVe">
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="wTT-s0-mxZ">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="50" translatesAutoresizingMaskIntoConstraints="NO" id="Htg-7F-K8b">
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="60"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canyon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="60" translatesAutoresizingMaskIntoConstraints="NO" id="5ZF-8f-vy9">
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="70"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="T6E-mz-euH">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass" translatesAutoresizingMaskIntoConstraints="NO" id="cGl-XE-Mce">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="41" id="6ux-aB-RQx"/>
+                                            <constraint firstAttribute="height" constant="41" id="TDH-iH-i7F"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARIZONA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdV-WQ-ctT">
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RLm-Ha-5Ta">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-2n-YNJ">
+                                        <color key="backgroundColor" red="0.10052410109049169" green="0.79853318542631668" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Bdc-ig-bEo"/>
+                                            <constraint firstAttribute="width" constant="120" id="tfa-aB-Aub"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <state key="normal" title="Photos">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="IAR-so-YaA" kind="show" id="fh8-3V-IIf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-9c-jJX">
+                                        <color key="backgroundColor" red="0.10052410109049169" green="0.79853318542631668" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ah2-fD-1tr"/>
+                                            <constraint firstAttribute="width" constant="120" id="yVY-df-kwQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                        <state key="normal" title="About">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="bDd-nn-ElY" kind="show" id="19V-Ez-Qep"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="vertical"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="vertical" spacing="50"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Xi-yo-Dbw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6H8-kN-pLv"/>
+                            <constraint firstItem="T6E-mz-euH" firstAttribute="leading" secondItem="zZb-a0-meZ" secondAttribute="leading" id="HHZ-eK-YX4"/>
+                            <constraint firstItem="RLm-Ha-5Ta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ikh-hA-1dS">
+                                <variation key="heightClass=compact-widthClass=compact" constant="170"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="250"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zZb-a0-meZ" secondAttribute="bottom" constant="250" id="MJW-5L-Gc5">
+                                <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="250"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="zZb-a0-meZ" secondAttribute="trailing" id="Q0P-RC-xRf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RLm-Ha-5Ta" secondAttribute="bottom" constant="50" id="RX8-0x-Gvm">
+                                <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="140"/>
+                            </constraint>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Xi-yo-Dbw" secondAttribute="bottom" id="asc-Lh-L0h"/>
+                            <constraint firstItem="zZb-a0-meZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fFw-Lr-s7q"/>
+                            <constraint firstItem="T6E-mz-euH" firstAttribute="top" secondItem="zZb-a0-meZ" secondAttribute="bottom" constant="20" id="ihJ-jE-zoP"/>
+                            <constraint firstAttribute="trailing" secondItem="2Xi-yo-Dbw" secondAttribute="trailing" id="niV-TS-UFt"/>
+                            <constraint firstItem="zZb-a0-meZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="uDO-LM-lRG">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="2Xi-yo-Dbw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vqt-DF-N9X"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="aboutBtn" destination="1l5-9c-jJX" id="LL5-dp-rUr"/>
+                        <outlet property="photosBtn" destination="dWF-2n-YNJ" id="TpG-u3-UYg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="136.28185907046478"/>
+        </scene>
+        <!--PhotosVC-->
+        <scene sceneID="26i-KV-BK2">
+            <objects>
+                <viewController id="IAR-so-YaA" customClass="PhotosVC" customModule="My_Favorite_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xmb-uN-ndk"/>
+                        <viewControllerLayoutGuide type="bottom" id="lbt-1g-TBc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XiU-ac-VnB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ulo-cY-KDt">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr1-ac-nqV">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="7jr-PC-2Gh"/>
+                                            <constraint firstAttribute="width" constant="111" id="coC-n7-oPG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1005241011" green="0.79853318539999996" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Pr1-ac-nqV" firstAttribute="centerY" secondItem="Ulo-cY-KDt" secondAttribute="centerY" constant="5" id="3va-it-Wpg"/>
+                                    <constraint firstAttribute="height" constant="55" id="KRZ-Bz-q9q"/>
+                                    <constraint firstItem="Pr1-ac-nqV" firstAttribute="centerX" secondItem="Ulo-cY-KDt" secondAttribute="centerX" id="ZoJ-mD-vfx"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqQ-fN-AIJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Cbg-zt-93m"/>
+                                    <constraint firstAttribute="width" constant="46" id="b6m-XR-m8q"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="IAR-so-YaA" eventType="touchUpInside" id="xty-LC-IE4"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4My-X7-nTx">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canyon1" translatesAutoresizingMaskIntoConstraints="NO" id="Hov-iA-WPj"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canyon2" translatesAutoresizingMaskIntoConstraints="NO" id="C51-fO-gGk"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canyon3" translatesAutoresizingMaskIntoConstraints="NO" id="at9-Kj-dZO"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canyon4" translatesAutoresizingMaskIntoConstraints="NO" id="iFE-eS-j96"/>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MqQ-fN-AIJ" firstAttribute="top" secondItem="Xmb-uN-ndk" secondAttribute="bottom" id="6xb-Kr-YbG"/>
+                            <constraint firstItem="lbt-1g-TBc" firstAttribute="top" secondItem="4My-X7-nTx" secondAttribute="bottom" constant="10" id="7k7-2N-Lba"/>
+                            <constraint firstItem="Ulo-cY-KDt" firstAttribute="leading" secondItem="XiU-ac-VnB" secondAttribute="leading" id="9GV-HT-5xd"/>
+                            <constraint firstItem="MqQ-fN-AIJ" firstAttribute="leading" secondItem="XiU-ac-VnB" secondAttribute="leadingMargin" id="C2Y-1s-Hup"/>
+                            <constraint firstAttribute="trailing" secondItem="Ulo-cY-KDt" secondAttribute="trailing" id="Deq-Mz-OTP"/>
+                            <constraint firstItem="Ulo-cY-KDt" firstAttribute="top" secondItem="XiU-ac-VnB" secondAttribute="top" id="MtJ-AD-pdm"/>
+                            <constraint firstItem="4My-X7-nTx" firstAttribute="trailing" secondItem="XiU-ac-VnB" secondAttribute="trailingMargin" id="Phq-kF-0Xb"/>
+                            <constraint firstItem="4My-X7-nTx" firstAttribute="leading" secondItem="XiU-ac-VnB" secondAttribute="leadingMargin" id="RfD-CZ-HCW"/>
+                            <constraint firstItem="4My-X7-nTx" firstAttribute="top" secondItem="Ulo-cY-KDt" secondAttribute="bottom" constant="8" id="pA7-cl-hSw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECv-jq-aaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.60000000000002" y="-224.4377811094453"/>
+        </scene>
+        <!--AboutVC-->
+        <scene sceneID="V2F-d0-HML">
+            <objects>
+                <viewController id="bDd-nn-ElY" customClass="AboutVC" customModule="My_Favorite_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TgS-ZJ-nT5"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGz-Hi-cVZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U83-1U-Gb8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNM-2L-Hib">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77u-Ny-cCt">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="88" id="A5W-Mw-0Eq"/>
+                                            <constraint firstAttribute="height" constant="35" id="sya-5a-ZAx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1005241011" green="0.79853318539999996" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="2wi-Ly-uB7"/>
+                                    <constraint firstItem="77u-Ny-cCt" firstAttribute="centerX" secondItem="lNM-2L-Hib" secondAttribute="centerX" id="PHv-NQ-3mu"/>
+                                    <constraint firstItem="77u-Ny-cCt" firstAttribute="centerY" secondItem="lNM-2L-Hib" secondAttribute="centerY" constant="5" id="U9Z-CV-9a7"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yok-id-tzq">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SAL-vT-ZCn"/>
+                                    <constraint firstAttribute="width" constant="46" id="eQn-Lx-riE"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="bDd-nn-ElY" eventType="touchUpInside" id="4lI-f5-5hz"/>
+                                    <action selector="backBtnPressed:" destination="IAR-so-YaA" eventType="touchUpInside" id="J1i-zz-lH0"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="adI-Tz-VmR">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2f-Ak-F1I">
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CCg-lB-Cey">
+                                        <string key="text">The Grand Canyon is a steep-sided canyon carved by the Colorado River in the state of Arizona in the United States. It is 277 miles (446 km) long, up to 18 miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857 meters). For thousands of years, the area has been continuously inhabited by Native Americans, who built settlements within the canyon and its many caves. Weather in the Grand Canyon varies according to elevation. The forested rims are high enough to receive winter snowfall, but along the Colorado River in the Inner Gorge, temperatures are similar to those found in Tucson and other low elevation desert locations in Arizona.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interesting Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LU4-9U-5Vu">
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F51-4W-b5h">
+                                        <string key="text">The Grand Canyon is found in the US state of Arizona. Many people consider it to be one of the seven wonders of the natural world. At its narrowest point it stretches 4 miles (6.4 kilometres) across. The Grand Canyon is around 6000 (1800 metres) feet deep. The rock found on the upper rim (limestone) is around 230 million years old. American Indians have been living in and around the canyon for thousands of years. As well as sightseeing, hiking and rafting are also popular in the area.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW3-oO-3I2">
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvz-8Q-74p">
+                                        <string key="text">At any time of year, whether you come for a day or a week, you’ll find more than enough to fill your hours. Below are just a few suggestions to include on your itinerary while visiting Grand Canyon National Park. Hiking is one of the most rewarding ways to see Grand Canyon, and is also the most difficult.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRj-8M-rRj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="74z-DF-tEY"/>
+                                    <constraint firstAttribute="width" constant="100" id="TXr-k2-Rws"/>
+                                </constraints>
+                                <state key="normal" title="Find Out More"/>
+                                <connections>
+                                    <action selector="findOutMoreBtnPressed:" destination="bDd-nn-ElY" eventType="touchUpInside" id="anQ-5D-46Q"/>
+                                    <segue destination="dEM-lv-pvA" kind="show" id="SOx-HB-157"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yok-id-tzq" firstAttribute="leading" secondItem="U83-1U-Gb8" secondAttribute="leadingMargin" id="1IQ-IB-FDT"/>
+                            <constraint firstItem="adI-Tz-VmR" firstAttribute="top" secondItem="lNM-2L-Hib" secondAttribute="bottom" constant="8" id="5LZ-AH-19A"/>
+                            <constraint firstItem="lNM-2L-Hib" firstAttribute="top" secondItem="U83-1U-Gb8" secondAttribute="top" id="FyM-Mo-wof"/>
+                            <constraint firstItem="yok-id-tzq" firstAttribute="top" secondItem="TgS-ZJ-nT5" secondAttribute="bottom" id="Gba-ed-xpT"/>
+                            <constraint firstItem="adI-Tz-VmR" firstAttribute="leading" secondItem="U83-1U-Gb8" secondAttribute="leadingMargin" id="Wlh-lI-QHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="lNM-2L-Hib" secondAttribute="trailing" id="cY0-aT-O6o"/>
+                            <constraint firstItem="lNM-2L-Hib" firstAttribute="leading" secondItem="U83-1U-Gb8" secondAttribute="leading" id="d9b-aR-vph"/>
+                            <constraint firstItem="XGz-Hi-cVZ" firstAttribute="top" secondItem="adI-Tz-VmR" secondAttribute="bottom" constant="30" id="lys-7Q-EUm"/>
+                            <constraint firstItem="qRj-8M-rRj" firstAttribute="centerX" secondItem="U83-1U-Gb8" secondAttribute="centerX" id="sWE-T0-GgS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="adI-Tz-VmR" secondAttribute="trailing" id="w1N-QC-uyK"/>
+                            <constraint firstItem="qRj-8M-rRj" firstAttribute="top" secondItem="adI-Tz-VmR" secondAttribute="bottom" id="xRk-Li-T5G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uru-lF-P3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="568.06596701649175"/>
+        </scene>
+        <!--WebVC-->
+        <scene sceneID="Gfn-AY-da1">
+            <objects>
+                <viewController id="dEM-lv-pvA" customClass="WebVC" customModule="My_Favorite_Place" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cas-yc-X2i"/>
+                        <viewControllerLayoutGuide type="bottom" id="GeK-iL-Yjh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="avn-D8-lvA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fe-8z-RbN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6gZ-ZH-OR4"/>
+                                    <constraint firstAttribute="width" constant="46" id="XRF-ZL-fzx"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="dEM-lv-pvA" eventType="touchUpInside" id="Yuq-3Y-uNe"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RjL-GH-1Dd">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1005241011" green="0.79853318539999996" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3fe-8z-RbN" firstAttribute="leading" secondItem="avn-D8-lvA" secondAttribute="leadingMargin" id="5iV-5l-N49"/>
+                            <constraint firstItem="3fe-8z-RbN" firstAttribute="top" secondItem="cas-yc-X2i" secondAttribute="bottom" id="FuK-gc-96k"/>
+                            <constraint firstItem="RjL-GH-1Dd" firstAttribute="top" secondItem="3fe-8z-RbN" secondAttribute="bottom" id="Jrz-7Z-qqF"/>
+                            <constraint firstAttribute="trailing" secondItem="RjL-GH-1Dd" secondAttribute="trailing" constant="5" id="coU-4T-Qbo"/>
+                            <constraint firstItem="RjL-GH-1Dd" firstAttribute="leading" secondItem="avn-D8-lvA" secondAttribute="leading" constant="5" id="j3z-z8-MmB"/>
+                            <constraint firstItem="GeK-iL-Yjh" firstAttribute="top" secondItem="RjL-GH-1Dd" secondAttribute="bottom" constant="5" id="j9I-sF-KLY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E9D-Ij-hdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1797.5999999999999" y="567.16641679160421"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="1600" height="900"/>
+        <image name="canyon1" width="1600" height="800"/>
+        <image name="canyon2" width="2880" height="2160"/>
+        <image name="canyon3" width="1500" height="1000"/>
+        <image name="canyon4" width="1280" height="853"/>
+        <image name="compass" width="500" height="500"/>
+    </resources>
 </document>
