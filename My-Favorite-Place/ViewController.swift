@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photosBtn.layer.cornerRadius = 10.0
-        aboutBtn.layer.cornerRadius = 10.0
+        photosBtn.layer.cornerRadius = 20.0
+        aboutBtn.layer.cornerRadius = 20.0
     }
 
 }
