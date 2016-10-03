@@ -363,11 +363,11 @@
                         <color key="backgroundColor" red="0.1005241011" green="0.79853318539999996" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3fe-8z-RbN" firstAttribute="leading" secondItem="avn-D8-lvA" secondAttribute="leadingMargin" id="5iV-5l-N49"/>
-                            <constraint firstItem="GeK-iL-Yjh" firstAttribute="top" secondItem="QPt-e7-il1" secondAttribute="bottom" constant="5" id="BJN-fK-L1i"/>
+                            <constraint firstItem="GeK-iL-Yjh" firstAttribute="top" secondItem="QPt-e7-il1" secondAttribute="bottom" id="BJN-fK-L1i"/>
                             <constraint firstItem="3fe-8z-RbN" firstAttribute="top" secondItem="cas-yc-X2i" secondAttribute="bottom" id="FuK-gc-96k"/>
-                            <constraint firstAttribute="trailing" secondItem="QPt-e7-il1" secondAttribute="trailing" constant="5" id="LK9-fT-euJ"/>
+                            <constraint firstAttribute="trailing" secondItem="QPt-e7-il1" secondAttribute="trailing" id="LK9-fT-euJ"/>
                             <constraint firstItem="QPt-e7-il1" firstAttribute="top" secondItem="3fe-8z-RbN" secondAttribute="bottom" id="fiY-5U-ZjZ"/>
-                            <constraint firstItem="QPt-e7-il1" firstAttribute="leading" secondItem="avn-D8-lvA" secondAttribute="leading" constant="5" id="pML-ZV-l2y"/>
+                            <constraint firstItem="QPt-e7-il1" firstAttribute="leading" secondItem="avn-D8-lvA" secondAttribute="leading" id="pML-ZV-l2y"/>
                         </constraints>
                     </view>
                     <connections>
