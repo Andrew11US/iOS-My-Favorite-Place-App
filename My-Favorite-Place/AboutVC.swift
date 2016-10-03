@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import WebKit
 
 class AboutVC: UIViewController {
 
@@ -16,20 +15,13 @@ class AboutVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
 
     @IBAction func findOutMoreBtnPressed(_ sender: AnyObject) {
-        let StringURL = "http://www.grandcanyonlodges.com/things-to-do/activities/"
-        
-        
+        // Loads site for more information about activities
     }
     
 

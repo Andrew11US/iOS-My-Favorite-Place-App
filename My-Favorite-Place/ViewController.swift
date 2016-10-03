@@ -18,15 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        photosBtn.layer.cornerRadius = 5.0
-        aboutBtn.layer.cornerRadius = 5.0
+        photosBtn.layer.cornerRadius = 10.0
+        aboutBtn.layer.cornerRadius = 10.0
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

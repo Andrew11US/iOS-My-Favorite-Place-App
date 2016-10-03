@@ -7,13 +7,32 @@
 //
 
 import UIKit
+import WebKit
 
 class WebVC: UIViewController {
 
+    // Creating coustom WebView
+    @IBOutlet weak var container: UIView!
+    var webView: WKWebView!
+    
+    // Request to load
+    let requestStr = "http://www.grandcanyonlodges.com/things-to-do/activities/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        webView = WKWebView()
+        container.addSubview(webView)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        // Web View size
+        let frame = CGRect(x: 0, y: 0, width: container.bounds.width, height: container.bounds.height)
+        webView.frame = frame
+        
+        // Loading request when view appears
+        loadRequest(urlStr: requestStr)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +42,14 @@ class WebVC: UIViewController {
     
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func loadRequest(urlStr: String) {
+        
+        // Creating request from String
+        let url = NSURL(string: urlStr)!
+        let request = NSURLRequest(url: url as URL)
+        webView.load(request as URLRequest)
     }
 
 

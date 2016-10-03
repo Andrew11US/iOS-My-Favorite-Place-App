@@ -12,8 +12,7 @@ class PhotosVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +23,5 @@ class PhotosVC: UIViewController {
     @IBAction func backBtnPressed(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
-
-
+  
 }
