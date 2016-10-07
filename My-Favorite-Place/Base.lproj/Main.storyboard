@@ -74,7 +74,7 @@
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RLm-Ha-5Ta">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-2n-YNJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-2n-YNJ" customClass="RoundedButton" customModule="My_Favorite_Place" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.10052410109049169" green="0.79853318542631668" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Bdc-ig-bEo"/>
@@ -88,7 +88,7 @@
                                             <segue destination="IAR-so-YaA" kind="show" id="fh8-3V-IIf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-9c-jJX">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l5-9c-jJX" customClass="RoundedButton" customModule="My_Favorite_Place" customModuleProvider="target">
                                         <color key="backgroundColor" red="0.10052410109049169" green="0.79853318542631668" blue="0.94809204339999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Ah2-fD-1tr"/>

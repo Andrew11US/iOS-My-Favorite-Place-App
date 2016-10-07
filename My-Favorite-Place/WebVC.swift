@@ -26,6 +26,7 @@ class WebVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
         // Web View size
         let frame = CGRect(x: 0, y: 0, width: container.bounds.width, height: container.bounds.height)
         webView.frame = frame
